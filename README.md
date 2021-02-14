@@ -3,7 +3,9 @@
 This project allow you to setup a docker instance running Jenkins and
 test Jenkins pipeline on project stored locally on your computer.
 
-With this setup, you can also use the docker plugin and docker agents in your pipeline. 
+With this setup, you can also use the docker plugin and docker agents in your pipeline.
+
+You can find the relevant docker commands to build and run Jenkins in the Makefile.
 
 ## Build and run the image:
 
@@ -16,6 +18,7 @@ make build_jenkins
 # run the image
 make run_jenkins
 ```
+Once the container is running, you can access Jenkins [here](http://localhost:8080)
 
 ## Persist the data
 
@@ -30,7 +33,7 @@ at `/var/run/docker.sock`, the standard location for Mac and Linux systems
 
 This is not intended for any production environment.
 
-## Plugin used
+## Plugins used
 
 To run the example, in addition to the basic plugin recommended by Jenkins during setup, the following 
 are required:
